@@ -16,8 +16,10 @@ function SignIn() {
   //Endpoint:Fetch API POST request using async/await
   const SignInData = async (e) => {
     e.preventDefault();
+
+    try{
     const res = await fetch("/users/signin", {
-      method: "POST",
+      method: 'POST',
       headers: {
         "Content-Type": "application/json",
         'Accept': 'application/json'
@@ -46,6 +48,13 @@ function SignIn() {
     else {
       Swal.fire("Oops..", `${data.message}!`, "error");
     }
+
+  }
+  catch (error){
+
+    console.error(error);
+    return error;
+  }
   };
 
   
