@@ -86,7 +86,7 @@ const MovieDetails = () => {
   const getMovieData = () => {
     try {
       axios
-        .get("http://localhost:8080/api/booking", {
+        .get("https://bookmyshow-backend.onrender.com/api/booking", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -102,7 +102,7 @@ const MovieDetails = () => {
 
   // Endpoint:Fetch API POST request using async/await
   const postMovieData = async () => {
-    const response = await fetch("http://localhost:8080/api/booking", {
+    const response = await fetch("https://bookmyshow-backend.onrender.com/api/booking", {
       method: "POST",
       body: JSON.stringify({
         movie: movieInfo.movie,
