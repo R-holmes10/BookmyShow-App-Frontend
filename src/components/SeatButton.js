@@ -33,7 +33,7 @@ function SeatButton({ item, index, handleSeatSlot,ToggleSeats }) {
     // seat-slot container
     <div
       
-      className={`${activeObject === item.seatType ? "bg-[#d37373] rounded-md text-white" : ""} font-bold border-2 border-black m-3 p-[0.5rem] rounded-xl cursor-pointer transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 hover:bg-[#d37373] duration-150`}
+      className={`${activeObject === item.seatType ? "bg-[#d37373] rounded-md text-white" : ""} font-bold border-2 border-black m-2 p-[0.5rem] rounded-xl cursor-pointer transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 hover:bg-[#d37373] duration-150`}
       onClick={() => {
         ToggleSeats(index);
       }}
@@ -53,7 +53,7 @@ function SeatButton({ item, index, handleSeatSlot,ToggleSeats }) {
         </button>
 
         {/* Display Number of seats */}
-        <button className="px-6 w-0 m-2">{item.seats}</button>
+        <span className="px-6">{item.seats}</span>
 
         {/* Increment button */}
         <button

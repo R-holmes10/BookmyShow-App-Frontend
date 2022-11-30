@@ -19,7 +19,7 @@ const MovieName = ({handleMovieName, movieInfo}) => {
           <button
             key={index}
             
-            className={`${movieInfo.movie === item ? "bg-[#d37373] rounded-md text-white" : ""}  font-bold border-2 border-black m-3 p-[0.5rem] rounded-xl transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110  duration-150`}
+            className={`${movieInfo.movie === item ? "bg-[#d37373] rounded-md text-white" : ""} font-bold border-2 border-black m-3 p-[0.5rem] rounded-xl transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 hover:bg-[#d37373] duration-150`}
             onClick={() => {
               handleMovieName(item)
             }}

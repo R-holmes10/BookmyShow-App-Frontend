@@ -30,10 +30,10 @@ function NavBar() {
             <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
               
               {/* Book My Show Ticket Booking Page Link */}
-              <div className="px-3">
+              <div className="">
                 <Link to={"/sign-in"}>
                   <img 
-                  className="h-16 w-36"
+                  className="w-36 animate-pulse"
                   src={logo} alt=""/>
                 </Link>
               </div>

@@ -5,56 +5,48 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 function SignIn() {
-  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   //Redirect page towards Book that Show Ticket Booking App upon successful user sign-in
   const navigate = useNavigate();
 
-  
   //Endpoint:Fetch API POST request using async/await
   const SignInData = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("/users/signin", {
-      method: 'POST',
+    const res = await fetch("http://localhost:8080/users/signin", {
+      method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         email: email,
         password: password,
       }),
+    });
 
-    }
-    )
-    // .then((res)=>res.json())
-    // .then((json)=> console.log(json));
-    
     const data = await res.json();
-    console.log(data)
-   
+    // console.log(data)
+
     //Status Code:201 --> Successful user sign-in
     if (data.success) {
       localStorage.setItem("token", data.token);
-       //alert message using SweetAlert npm package
+      //alert message using SweetAlert npm package
       Swal.fire("Book that Show", `Signed In Successfully!`, "success");
       navigate("/bms");
-    } 
+    }
     //Status Code:404  -->Incorrect email
     else if (data.errors) {
       Swal.fire("Oops..", `${data.errors[0].msg}!`, "error");
-    } 
-    
-     //Status Code:400  -->Incorrect password
+    }
+
+    //Status Code:400  -->Incorrect password
     else {
       Swal.fire("Oops..", `${data.message}!`, "error");
     }
-
   };
 
-  
   //handle functions for Email and Password
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -62,17 +54,14 @@ function SignIn() {
   const handlePassword = (e) => {
     setPassword(e.target.value);
   };
-  
-  
+
   return (
     <>
       <div>
-        
         {/* main section of sign-in page */}
         <section className="h-screen">
           <div className="px-6 h-full text-gray-800">
             <div className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6">
-              
               {/* Sign-in page image */}
               <div className="grow-0 shrink-1 md:shrink-0 basis-auto xl:w-6/12 lg:w-6/12 md:w-9/12 mb-12 md:mb-0">
                 <img
@@ -81,7 +70,7 @@ function SignIn() {
                   alt="#"
                 />
               </div>
-              
+
               {/* Sign-in form */}
               <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
                 <form>
@@ -121,13 +110,14 @@ function SignIn() {
                     >
                       SIGN IN
                     </button>
-                    
+
                     {/* To go to sign-up page if account doesn't exist */}
                     <p className="text-sm font-semibold mt-2 pt-1 mb-0">
                       Don't have an account?&nbsp;
                       <Link
                         to="/sign-up"
-                        className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out">
+                        className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
+                      >
                         Sign Up
                       </Link>
                     </p>
