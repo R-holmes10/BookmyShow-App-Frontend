@@ -28,10 +28,8 @@ function SignIn() {
       }),
 
     }
-    )
-    .then(res=>res.json())
-    .catch((err)=> console.log(err));
-    
+    ).then((response)=>response.json())
+    .then((json)=> console.log(json));
     
     const data = await res.json();
    
