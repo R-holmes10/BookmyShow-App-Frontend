@@ -28,10 +28,12 @@ function SignIn() {
       }),
 
     }
-    ).then((response)=>response.json())
-    .then((json)=> console.log(json));
+    )
+    // .then((res)=>res.json())
+    // .then((json)=> console.log(json));
     
     const data = await res.json();
+    console.log(data)
    
     //Status Code:201 --> Successful user sign-in
     if (data.success) {
