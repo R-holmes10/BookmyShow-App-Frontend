@@ -17,7 +17,6 @@ function SignIn() {
   const SignInData = async (e) => {
     e.preventDefault();
 
-    try{
     const res = await fetch("/users/signin", {
       method: 'POST',
       headers: {
@@ -27,10 +26,15 @@ function SignIn() {
         email: email,
         password: password,
       }),
-    });
+
+    }
+    )
+    .then(res=>res.json())
+    .catch((err)=> console.log(err));
     
     
     const data = await res.json();
+   
     //Status Code:201 --> Successful user sign-in
     if (data.success) {
       localStorage.setItem("token", data.token);
@@ -48,12 +52,6 @@ function SignIn() {
       Swal.fire("Oops..", `${data.message}!`, "error");
     }
 
-  }
-  catch (error){
-
-    console.error(error);
-    return error;
-  }
   };
 
   
