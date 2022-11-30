@@ -21,8 +21,7 @@ function SignIn() {
     const res = await fetch("/users/signin", {
       method: 'POST',
       headers: {
-        "Content-Type": "application/json",
-        'Accept': 'application/json'
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
         email: email,
