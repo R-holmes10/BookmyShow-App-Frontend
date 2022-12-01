@@ -18,16 +18,17 @@ function SignIn() {
     const res = await fetch("/users/signin", {
       method: "POST",
       headers: {
+        "Accept":"application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         email: email,
         password: password,
       }),
-    }).then(data=>{return data.json()})
+    });
   
 
-    const data = await res.json();
+    const data = await res.data();
     // console.log(data)
 
     //Status Code:201 --> Successful user sign-in
