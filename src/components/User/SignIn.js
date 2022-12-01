@@ -24,8 +24,8 @@ function SignIn() {
         email: email,
         password: password,
       }),
-    });
-    try{
+    }).then(data=>{return data.json()})
+  
 
     const data = await res.json();
     // console.log(data)
@@ -47,10 +47,7 @@ function SignIn() {
       Swal.fire("Oops..", `${data.message}!`, "error");
     }
 
-  }
-  catch(e){
-    console.log('error:',e.message);
-  }
+ 
 
   };
 
