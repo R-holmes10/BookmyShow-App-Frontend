@@ -8,13 +8,13 @@
 
 <!-- Links to social profiles  -->
 <div id="badges" align="center">
-  <a href=" ">
+  <a href="https://www.linkedin.com/in/ritu-verma-52a105228/ ">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
-  <a href="">
+  <a href="#">
     <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
   </a>
-  <a href="">
+  <a href="#">
     <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
   </a>
 </div>
@@ -44,7 +44,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
   <h2>Project Description</h2>
   <b>Project Name : BookMyShow </b>
-  <a href =" "/>
+  <a href ="https://bookmyshow-project-frontend.vercel.app"/>
   Live Here
   </a>
   <br>
@@ -65,10 +65,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-plain.svg" title="TailwindCSS" alt="JavaScript" width="40" height="40"/>&nbsp;
   <img src="https://axios-http.com/assets/logo.svg" title="Axios" alt="JavaScript" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original.svg" title="MongoDB" alt="MongoDB" width="40" height="40"/>&nbsp;
-  <img src="https://avatars.githubusercontent.com/u/10251060?s=200&v=4" title="Postman" alt="Postman" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
-  <img src="https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png" title="ExpressJS" alt="ExpressJS" width="40" height="40"/>&nbsp;
+ 
 
 </div><br>
 
@@ -78,7 +75,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
   <p>➤ Saad Ansari </p> 
   <p>➤ Md. Ashif Reza</p>
   <p>➤ Kaustubh Sule</p>
-  <p>➤ Parvez Ahmed Ansari</p><br>
+  <br>
 
 <b>Project Components:</b><br>
 
@@ -99,7 +96,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 <!-- Select Seat Type & Quantity -->
 
-<br><b>➤ Seat Type & Quantity :</b> This component enables user to select a specific seat type and the quantity of seats required. The maximum amount available per user is limited to 10 seats.
+<br><b>➤ Seat Type & Quantity :</b> This component enables user to select a specific seat type and the quantity of seats required. The maximum amount available per user is limited to 9 seats.
 <br></br><img src="https://github.com/sulekaustubh/BookMyShow-screenshots/blob/main/select-seat.jpeg" width="1200" height="150"/><br></br>
 
 <!-- Book Now Button -->
