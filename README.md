@@ -49,7 +49,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
   </a>
   <br>
   <b>API Documentation </b>
-  <a href ="https://documenter.getpostman.com/view/21949842/2s8YmSs1K2#503fe0a9-50d5-4f27-8feb-0dcda0e15345"/>
+  <a href ="https://documenter.getpostman.com/view/21949842/2s8YmSs1K2"/>
+  
   Click Here
   </a>
   <br>
