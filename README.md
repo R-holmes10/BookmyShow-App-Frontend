@@ -71,10 +71,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 <b>Team Collaborators: </b>
 
-  <p>➤ Ritu Verma</p>
-  <p>➤ Saad Ansari </p> 
-  <p>➤ Md. Ashif Reza</p>
-  <p>➤ Kaustubh Sule</p>
+  <p>➤ <i>Ritu Verma</i></p>
+  <p>➤ <i>Saad Ansari</i> </p> 
+  <p>➤ <i>Md. Ashif Reza</i></p>
+  <p>➤ <i>Kaustubh Sule</i></p>
   <br>
 
 <b>Project Components:</b><br>
