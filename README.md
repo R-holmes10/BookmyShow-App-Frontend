@@ -3,7 +3,7 @@
 </div>
 <div align="center">
 <h2>Hello ! <h2>
-  <p>Ritu Verma here !</p> 
+  <p><i>Ritu Verma</i> here !</p> 
 </div>
 
 <!-- Links to social profiles  -->
@@ -43,7 +43,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
   <h2>Project Description</h2>
-  <b>Project Name : BookMyShow </b>
+  <b>Project Name : <i>BookMyShow</i> </b>
   <a href ="https://bookmyshow-project-frontend.vercel.app"/>
   Live Here
   </a>
