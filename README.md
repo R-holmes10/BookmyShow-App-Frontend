@@ -47,6 +47,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
   <a href ="https://bookmyshow-project-frontend.vercel.app"/>
   Live Here
   </a>
+  The purpose of the project titled <b>“BookMyShow”</b> is to provide a web application that is user-friendly & reliable. The project mainly focuses on back-end   and front-end technologies to build the web application. It has four modules: Movie Name, Time Slot, Seat Slot, and Last Booking Details.
+
   <br>
   <b>API Documentation </b>
   <a href ="https://documenter.getpostman.com/view/21949842/2s8YmSs1K2"/>
